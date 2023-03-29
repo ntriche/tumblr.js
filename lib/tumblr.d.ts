@@ -1,4 +1,4 @@
-declare module 'tumblr.js' {
+declare module 'tumblr-promises' {
     type TumblrClientCallback = (err: any, resp: any, rawResp?: string) => void | Promise<any>
 
     interface TumblrClient {
