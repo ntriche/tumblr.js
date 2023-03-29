@@ -34,13 +34,13 @@ declare module 'tumblr.js' {
         blogQueue(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
         blogQueue(blogIdentifier: string, callback: TumblrClientCallback): void | Promise<any>
 
-        createTextPost(blogIdentifier: string, options: TextPostParams, callback: TumblrClientCallback): void | Promise<any>
-        createPhotoPost(blogIdentifier: string, options: PhotoPostParams, callback: TumblrClientCallback): void | Promise<any>
-        createQuotePost(blogIdentifier: string, options: QuotePostParams, callback: TumblrClientCallback): void | Promise<any>
-        createLinkPost(blogIdentifier: string, options: LinkPostParams, callback: TumblrClientCallback): void | Promise<any>
-        createChatPost(blogIdentifier: string, options: ChatPostParams, callback: TumblrClientCallback): void | Promise<any>
-        createAudioPost(blogIdentifier: string, options: AudioPostParams, callback: TumblrClientCallback): void | Promise<any>
-        createVideoPost(blogIdentifier: string, options: VideoPostParams, callback: TumblrClientCallback): void | Promise<any>
+        createTextPost(blogIdentifier: string, options: TextPostParams, callback?: TumblrClientCallback): void | Promise<any>
+        createPhotoPost(blogIdentifier: string, options: PhotoPostParams, callback?: TumblrClientCallback): void | Promise<any>
+        createQuotePost(blogIdentifier: string, options: QuotePostParams, callback?: TumblrClientCallback): void | Promise<any>
+        createLinkPost(blogIdentifier: string, options: LinkPostParams, callback?: TumblrClientCallback): void | Promise<any>
+        createChatPost(blogIdentifier: string, options: ChatPostParams, callback?: TumblrClientCallback): void | Promise<any>
+        createAudioPost(blogIdentifier: string, options: AudioPostParams, callback?: TumblrClientCallback): void | Promise<any>
+        createVideoPost(blogIdentifier: string, options: VideoPostParams, callback?: TumblrClientCallback): void | Promise<any>
 
         taggedPosts(tag: string, options: object, callback: TumblrClientCallback): void | Promise<any>
         taggedPosts(tag: string, callback: TumblrClientCallback): void | Promise<any>
