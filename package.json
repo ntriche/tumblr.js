@@ -1,7 +1,7 @@
 {
-  "name": "tumblr.js",
-  "version": "3.0.0",
-  "description": "Official JavaScript client for the Tumblr API",
+  "name": "tumblr-promises",
+  "version": "3.0.1",
+  "description": "Unofficial JavaScript client for the Tumblr API",
   "main": "./lib/tumblr",
   "types": "./lib/tumblr.d.ts",
   "scripts": {
