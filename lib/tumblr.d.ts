@@ -2,76 +2,76 @@ declare module 'tumblr-promises' {
     type TumblrClientCallback = (err: any, resp: any, rawResp?: string) => void | Promise<any>
 
     interface TumblrClient {
-        userInfo(callback: TumblrClientCallback): void | Promise<any>
+        userInfo(callback: TumblrClientCallback): void
 
-        blogAvatar(blogIdentifier: string, size: number, params: object, callback: TumblrClientCallback): void | Promise<any>
-        blogAvatar(blogIdentifier: string, size: number, callback: TumblrClientCallback): void | Promise<any>
-        blogAvatar(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
-        blogAvatar(blogIdentifier: string, callback: TumblrClientCallback): void | Promise<any>
+        blogAvatar(blogIdentifier: string, size: number, params: object, callback: TumblrClientCallback): void
+        blogAvatar(blogIdentifier: string, size: number, callback: TumblrClientCallback): void
+        blogAvatar(blogIdentifier: string, params: object, callback: TumblrClientCallback): void
+        blogAvatar(blogIdentifier: string, callback: TumblrClientCallback): void
 
-        blogDrafts(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
-        blogDrafts(blogIdentifier: string, callback: TumblrClientCallback): void | Promise<any>
+        blogDrafts(blogIdentifier: string, params: object, callback: TumblrClientCallback): void
+        blogDrafts(blogIdentifier: string, callback: TumblrClientCallback): void
 
-        blogFollowers(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
-        blogFollowers(blogIdentifier: string, callback: TumblrClientCallback): void | Promise<any>
+        blogFollowers(blogIdentifier: string, params: object, callback: TumblrClientCallback): void
+        blogFollowers(blogIdentifier: string, callback: TumblrClientCallback): void
 
-        blogInfo(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
-        blogInfo(blogIdentifier: string, callback: TumblrClientCallback): void | Promise<any>
+        blogInfo(blogIdentifier: string, params: object, callback: TumblrClientCallback): void
+        blogInfo(blogIdentifier: string, callback: TumblrClientCallback): void
 
-        blogLikes(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
-        blogLikes(blogIdentifier: string, callback: TumblrClientCallback): void | Promise<any>
+        blogLikes(blogIdentifier: string, params: object, callback: TumblrClientCallback): void
+        blogLikes(blogIdentifier: string, callback: TumblrClientCallback): void
 
-        blogPosts(blogIdentifier: string): void | Promise<any>
-        blogPosts(blogIdentifier: string, type: string): void | Promise<any>
-        blogPosts(blogIdentifier: string, type: string, params: any): void | Promise<any>
-        blogPosts(blogIdentifier: string, params: any, callback: TumblrClientCallback): void | Promise<any>
-        blogPosts(blogIdentifier: string, callback: TumblrClientCallback): void | Promise<any>
-        blogPosts(blogIdentifier: string, type: string, params: any, callback: TumblrClientCallback): void | Promise<any>
+        blogPosts(blogIdentifier: string): void
+        blogPosts(blogIdentifier: string, type: string): void
+        blogPosts(blogIdentifier: string, type: string, params: any): void
+        blogPosts(blogIdentifier: string, params: any, callback: TumblrClientCallback): void
+        blogPosts(blogIdentifier: string, callback: TumblrClientCallback): void
+        blogPosts(blogIdentifier: string, type: string, params: any, callback: TumblrClientCallback): void
 
-        blogSubmissions(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
-        blogSubmissions(blogIdentifier: string, callback: TumblrClientCallback): void | Promise<any>
+        blogSubmissions(blogIdentifier: string, params: object, callback: TumblrClientCallback): void
+        blogSubmissions(blogIdentifier: string, callback: TumblrClientCallback): void
 
-        blogQueue(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
-        blogQueue(blogIdentifier: string, callback: TumblrClientCallback): void | Promise<any>
+        blogQueue(blogIdentifier: string, params: object, callback: TumblrClientCallback): void
+        blogQueue(blogIdentifier: string, callback: TumblrClientCallback): void
 
-        createTextPost(blogIdentifier: string, options: TextPostParams, callback?: TumblrClientCallback): void | Promise<any>
-        createPhotoPost(blogIdentifier: string, options: PhotoPostParams, callback?: TumblrClientCallback): void | Promise<any>
-        createQuotePost(blogIdentifier: string, options: QuotePostParams, callback?: TumblrClientCallback): void | Promise<any>
-        createLinkPost(blogIdentifier: string, options: LinkPostParams, callback?: TumblrClientCallback): void | Promise<any>
-        createChatPost(blogIdentifier: string, options: ChatPostParams, callback?: TumblrClientCallback): void | Promise<any>
-        createAudioPost(blogIdentifier: string, options: AudioPostParams, callback?: TumblrClientCallback): void | Promise<any>
-        createVideoPost(blogIdentifier: string, options: VideoPostParams, callback?: TumblrClientCallback): void | Promise<any>
+        createTextPost(blogIdentifier: string, options: TextPostParams, callback: TumblrClientCallback): void
+        createPhotoPost(blogIdentifier: string, options: PhotoPostParams, callback: TumblrClientCallback): void
+        createQuotePost(blogIdentifier: string, options: QuotePostParams, callback: TumblrClientCallback): void
+        createLinkPost(blogIdentifier: string, options: LinkPostParams, callback: TumblrClientCallback): void
+        createChatPost(blogIdentifier: string, options: ChatPostParams, callback: TumblrClientCallback): void
+        createAudioPost(blogIdentifier: string, options: AudioPostParams, callback: TumblrClientCallback): void
+        createVideoPost(blogIdentifier: string, options: VideoPostParams, callback: TumblrClientCallback): void
 
-        taggedPosts(tag: string, options: object, callback: TumblrClientCallback): void | Promise<any>
-        taggedPosts(tag: string, callback: TumblrClientCallback): void | Promise<any>
+        taggedPosts(tag: string, options: object, callback: TumblrClientCallback): void
+        taggedPosts(tag: string, callback: TumblrClientCallback): void
 
-        deletePost(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
-        deletePost(blogIdentifier: string, id: number | string, callback: TumblrClientCallback): void | Promise<any>
+        deletePost(blogIdentifier: string, params: object, callback: TumblrClientCallback): void
+        deletePost(blogIdentifier: string, id: number | string, callback: TumblrClientCallback): void
 
-        editPost(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
+        editPost(blogIdentifier: string, params: object, callback: TumblrClientCallback): void
 
-        reblogPost(blogIdentifier: string, params: object, callback: TumblrClientCallback): void | Promise<any>
+        reblogPost(blogIdentifier: string, params: object, callback: TumblrClientCallback): void
 
-        userDashboard(params: object, callback: TumblrClientCallback): void | Promise<any>
-        userDashboard(callback: TumblrClientCallback): void | Promise<any>
+        userDashboard(params: object, callback: TumblrClientCallback): void
+        userDashboard(callback: TumblrClientCallback): void
 
-        userLikes(params: object, callback: TumblrClientCallback): void | Promise<any>
-        userLikes(callback: TumblrClientCallback): void | Promise<any>
+        userLikes(params: object, callback: TumblrClientCallback): void
+        userLikes(callback: TumblrClientCallback): void
 
-        userFollowing(params: object, callback: TumblrClientCallback): void | Promise<any>
-        userFollowing(callback: TumblrClientCallback): void | Promise<any>
+        userFollowing(params: object, callback: TumblrClientCallback): void
+        userFollowing(callback: TumblrClientCallback): void
 
-        followBlog(params: object, callback: TumblrClientCallback): void | Promise<any>
-        followBlog(blogURL: string, callback: TumblrClientCallback): void | Promise<any>
+        followBlog(params: object, callback: TumblrClientCallback): void
+        followBlog(blogURL: string, callback: TumblrClientCallback): void
 
-        unfollowBlog(params: object, callback: TumblrClientCallback): void | Promise<any>
-        unfollowBlog(blogURL: string, callback: TumblrClientCallback): void | Promise<any>
+        unfollowBlog(params: object, callback: TumblrClientCallback): void
+        unfollowBlog(blogURL: string, callback: TumblrClientCallback): void
 
-        likePost(params: object, callback: TumblrClientCallback): void | Promise<any>
-        likePost(id: number | string, reblogKey: string, callback: TumblrClientCallback): void | Promise<any>
+        likePost(params: object, callback: TumblrClientCallback): void
+        likePost(id: number | string, reblogKey: string, callback: TumblrClientCallback): void
 
-        unlikePost(params: object, callback: TumblrClientCallback): void | Promise<any>
-        unlikePost(id: number | string, reblogKey: string, callback: TumblrClientCallback): void | Promise<any>
+        unlikePost(params: object, callback: TumblrClientCallback): void
+        unlikePost(id: number | string, reblogKey: string, callback: TumblrClientCallback): void
         
         getRequest(apiPath: string, paramsOrCallback?: object | null | TumblrClientCallback, callback?: TumblrClientCallback): Request
         postRequest(apiPath: string, paramsOrCallback?: object | null | TumblrClientCallback, callback?: TumblrClientCallback): Request
