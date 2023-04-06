@@ -42,6 +42,8 @@ declare module 'tumblr-promises' {
         createAudioPost(blogIdentifier: string, options: AudioPostParams, callback: TumblrClientCallback): void
         createVideoPost(blogIdentifier: string, options: VideoPostParams, callback: TumblrClientCallback): void
 
+        createTextPostWithPromise(blogIdentifier: string, options: TextPostParams, callback: TumblrClientCallback): void
+
         taggedPosts(tag: string, options: object, callback: TumblrClientCallback): void
         taggedPosts(tag: string, callback: TumblrClientCallback): void
 
